@@ -1,5 +1,7 @@
 <Alloy>
-	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
-	</Window>
+  <Window class="container">
+    <Label id="label">Hello, World</Label>
+    <TextField id="itemField" hintText="What do you need to do?" onReturn="closeKeyboard"/>
+    <Button class="button" onClick="login">Login</Button>
+  </Window>
 </Alloy>
