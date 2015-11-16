@@ -1,0 +1,11 @@
+<Alloy>
+  <Window class="container">
+    <View id="loginView">
+      <TextField id="emailTextField" hintText="Your email" onReturn="closeKeyboard"/>
+      <TextField id="passwordTextField" hintText="Your password" onReturn="closeKeyboard"/>
+      <Button class="button" onClick="login">Login</Button>
+      <Label id="errorLabel"></Label>
+      <ActivityIndicator id="activityIndicator"/>
+    </View>
+  </Window>
+</Alloy>

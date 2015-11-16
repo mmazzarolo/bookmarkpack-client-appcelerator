@@ -1,0 +1,42 @@
+".container": {
+  backgroundColor:"white"
+}
+
+"#loginView":{
+  layout: 'vertical',
+}
+
+"#emailTextField":{
+  hintTextColor: '#336699',
+  color: "#000",
+  width: '90%',
+  top: '25dp',
+  borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  returnKeyType: Ti.UI.RETURNKEY_DONE
+}
+
+"#passwordTextField":{
+  hintTextColor: '#336699',
+  color: "#000",
+  width: '90%',
+  top: '25dp',
+  passwordMask: true,
+  borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  returnKeyType: Ti.UI.RETURNKEY_DONE
+}
+
+".button":{
+  width: '40%',
+  top: '25dp'
+}
+
+"#errorLabel": {
+  top: '25dp',
+  width: Ti.UI.SIZE,
+  height: Ti.UI.SIZE,
+  textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+  color: "#B50D00",
+  font: {
+    fontSize: 16
+  }
+}
