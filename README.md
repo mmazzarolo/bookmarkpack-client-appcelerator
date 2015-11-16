@@ -1,1 +1,0 @@
-# bookmarkpack-client-appcelerator
