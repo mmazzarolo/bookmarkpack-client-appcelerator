@@ -43,7 +43,7 @@
 
 "#name": {
   textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
-  top: 20,
+  top: 15,
   left: 20,
   font: { fontSize: 18 },
   ellipsize: true,
@@ -54,7 +54,7 @@
   color: '#444444',
   textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
   left: 20,
-  bottom: 20,
+  bottom: 15,
   font: { fontSize: 14 },
   ellipsize: true,
   wordWrap: false
