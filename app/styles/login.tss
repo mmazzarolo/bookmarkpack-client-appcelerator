@@ -1,9 +1,6 @@
 ".container": {
-  backgroundColor:"white"
-}
-
-"#loginView":{
-  layout: 'vertical',
+  backgroundColor:"white",
+  layout: 'vertical'
 }
 
 "#emailTextField":{

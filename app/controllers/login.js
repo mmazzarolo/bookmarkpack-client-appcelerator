@@ -37,7 +37,8 @@ function onLoginComplete(res) {
   Titanium.API.info('Location: ' + this.location)
 
   endLoading()
-  var token = this.responseText.token
+  var responseJson = JSON.parse(this.responseText)
+  var token = responseJson.token
   Ti.App.Properties.setString('token', token)
   Ti.App.Properties.setString('email', $.emailTextField.value)
   Alloy.createController('userBookmarks').getView().open();
@@ -46,7 +47,6 @@ function onLoginComplete(res) {
 // Function called when an error occurs, including a timeout
 function onLoginError(e) {
   Titanium.API.info('onLoginError')
-  Titanium.API.info('JSON.stringify: ' + JSON.stringify(e))
   Titanium.API.info('Error: ' + e.error)
   Titanium.API.info('ResponseText: ' + this.responseText)
   Titanium.API.info('ConnectionType: ' + this.connectionType)

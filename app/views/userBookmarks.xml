@@ -1,6 +1,32 @@
 <Alloy>
-  <Window class="container">
-    <Label id="label">Hello, World</Label>
-    <Button class="button" onClick="logout">Logout</Button>
+  <Collection src="bookmarks" />
+  <Window id="window">
+
+    <View id="loggedView">
+      <Label id="loggedLabel" />
+      <Button id="loggedButton" onClick="logout">Logout</Button>
+      <View class="separatorView" />
+    </View>
+
+    <ActivityIndicator id="activityIndicator"/>
+
+    <ListView defaultItemTemplate="template" onItemclick="onBookmarkClick">
+
+      <Templates>
+        <ItemTemplate name="template">
+            <ImageView bindId="faviconImgUrl" id="faviconImgUrl" />
+            <View id="urlView">
+              <Label bindId="name" id="name" />
+              <Label bindId="url" id="url" />
+            </View>
+        </ItemTemplate>
+      </Templates>
+
+      <ListSection dataCollection="bookmarks" dataTransform="transformer">
+        <ListItem itemId="{id}" template="{template}" faviconImgUrl:image="{faviconImgUrl}" name:text="{name}" url:text="{url}" />
+      </ListSection>
+
+    </ListView>
+
   </Window>
 </Alloy>

@@ -1,15 +1,61 @@
-".container": {
-  backgroundColor:"white"
-}
-
-"Label": {
-  width: Ti.UI.SIZE,
+/**
+ * Logged in view
+ */
+"#loggedView": {
+  layout: 'vertical',
   height: Ti.UI.SIZE,
-  color: "#000"
+  top: 0,
+  bottom: 0
 }
 
-"#label": {
+"#loggedLabel": {
   font: {
-    fontSize: 12
-  }
+    fontSize: 14,
+    fontWeight:'bold'
+  },
+  top: 10
+}
+
+"#loggedButton": {
+  bottom: 10
+}
+
+".separatorView": {
+  backgroundColor:"#CBCBCB",
+  height: '2dp',
+  top: 0,
+  bottom: 0
+}
+
+/**
+ * Bookmarks List
+ */
+"#faviconImgUrl": {
+  left: 20,
+  width: 20,
+  height: 20
+}
+
+"#urlView": {
+  top: 0, left: 40, right: 0, bottom: 0,
+  layout: "vertical"
+}
+
+"#name": {
+  textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+  top: 20,
+  left: 20,
+  font: { fontSize: 18 },
+  ellipsize: true,
+  wordWrap: false
+}
+
+"#url": {
+  color: '#444444',
+  textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+  left: 20,
+  bottom: 20,
+  font: { fontSize: 14 },
+  ellipsize: true,
+  wordWrap: false
 }

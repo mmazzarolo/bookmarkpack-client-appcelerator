@@ -1,0 +1,5 @@
+"#row": {
+  height: '50dp',
+  backgroundColor: '#fff',
+  focusable: false
+}
